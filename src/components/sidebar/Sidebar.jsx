@@ -14,8 +14,8 @@ const Sidebar = () => {
       <div className="side-bar-item">
         <span className="side-bar-title">categories</span>
         <ul className="side-bar-list">
-          <li className="side-bar-list-item">Love</li>
-          <li className="side-bar-list-item">Fantasy</li>
+          <li className="side-bar-list-item">Music</li>
+          <li className="side-bar-list-item">Life</li>
           <li className="side-bar-list-item">Sport</li>
           <li className="side-bar-list-item">Weather</li>
           <li className="side-bar-list-item">Movies</li>

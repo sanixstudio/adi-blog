@@ -2,6 +2,9 @@
   flex: 3;
   display: flex;
   flex-direction: column;
+  margin-top: 4em;
+  margin-right: 2em;
+  width: 250px;
 }
 
 .side-bar-item {
