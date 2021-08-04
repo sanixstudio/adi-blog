@@ -10,12 +10,35 @@ import Register from './components/pages/register/Register';
 // global style
 import './App.css';
 
+// Global imports
+import { BrowserRouter as Router,  Switch,  Route,  Link} from "react-router-dom";
+
 function App() {
+  const user = false;
   return (
-    <div className="App">
+    <Router>
       <TopBar />
-      <Register />
-    </div>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/register">
+          {user ? <Home /> : <Register /> }
+        </Route>
+        <Route exact path="/login">
+          {user ? <Home /> : <Login /> }
+        </Route>
+        <Route exact path="/write">
+          {user? <Write /> : <Register /> }
+        </Route>
+        <Route exact path="/settings">
+          <Settings />
+        </Route>
+        <Route exact path="/post/:postId">
+          <Single />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
