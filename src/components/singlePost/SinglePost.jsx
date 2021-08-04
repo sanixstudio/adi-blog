@@ -1,6 +1,8 @@
 import './singlePost.css'
 
 const SinglePost = () => {
+  const user = true;
+  
   return (
     <div className="single-post">
       <div className="single-post-wrapper">
@@ -12,8 +14,12 @@ const SinglePost = () => {
         <div className="single-post-edit-bar">
           <h1 className="single-post-title">Some fancy title for post</h1>
           <div className="single-post-edit">
-            <i className="far single-post-icon fa-edit"></i>
-            <i className="far single-post-icon fa-trash-alt"></i>
+            {user && 
+              <fragment>
+                <i className="far single-post-icon fa-edit"></i>
+                <i className="far single-post-icon fa-trash-alt"></i>
+              </fragment>
+          }
           </div>
         </div>
         <div className="single-post-info">

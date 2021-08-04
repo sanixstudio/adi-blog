@@ -1,5 +1,5 @@
 // local imports
-import TopBar from './components/topbar/TopBar';
+import TopBar from './components/topBar/TopBar';
 import Home from './components/pages/home/Home';
 import Write from './components/pages/write/Write';
 import Single from './components/pages/single/Single';
