@@ -8,5 +8,5 @@ mongoose.connect(process.env.DB_URI, {
   useFindAndModify: false,
   useCreateIndex: true
 })
-.then(() => console.log(chalk.bgBlue.yellow("Database connection successful")))
+.then(() => console.log(chalk.yellow("Database connection successful")))
 .catch((err) => console.log(err))

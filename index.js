@@ -19,10 +19,10 @@ app.use(morgan('common'))
 const userRoutes = require('./routes/users')
 const authRoutes = require('./routes/auth')
 // app.use('/api', userRoutes)
-app.use('/api', authRoutes)
+app.use('/api/auth', authRoutes)
 
 // SERVER
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () => {
-  console.log(chalk.bgBlue.yellow('listening at http://localhost:' + PORT))
+  console.log(chalk.yellow('listening at http://localhost:' + PORT))
 })
