@@ -1,0 +1,96 @@
+.settings {
+  display: flex;
+}
+
+.settings-wrapper {
+  flex: 9;
+  color: #444;
+  margin: 1em;
+  margin-right: 4em;
+}
+
+.settings-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.settings-updated-title {
+  font-size: 2rem;
+}
+
+.settings-delete-title {
+  color: red;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: .5em 1em;
+  border-radius: 5px;
+}
+
+.settings-delete-title:hover {
+  background: #ddd;
+}
+
+.settings-form > label:first-child {
+  display: inline-block;
+  margin: 1em 0;
+}
+
+.settings-pp {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.settings .fa-user-circle {
+  font-size: 1.5rem;
+  color: orange;
+  cursor: pointer;
+}
+
+.settings-pp img{
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.setting-form-elements {
+  display: flex;
+  flex-direction: column;
+}
+
+.setting-form-elements label {
+  margin-left: 1em;
+  margin-top: 1em;
+  padding: .6em 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.setting-form-elements input {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.setting-form-button {
+  margin: 0 auto;
+  margin-top: 4em;
+  margin-left: 1em;
+  width: 100%;
+  padding: 1em 0;
+  background: teal;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.setting-form-button:hover {
+  opacity: .8;
+}
